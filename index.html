@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#202631"><meta name="description" content="ストリートピアノの音が、まちの記憶になる。今日の演奏との出会いを。">
+<title>Street Piano Insights</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=piano2">
+<script src="config.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<main>
+<section class="hero" id="home" aria-labelledby="headline">
+<div class="scene" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div>
+<header class="header"><a class="brand" href="#home">Street Piano <span>Insights</span></a><button class="menu-toggle" type="button" aria-label="メニューを開く" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+<nav id="menu" aria-label="メインメニュー" hidden><a href="#home">ホーム</a><a href="#spots">スポットを見る</a></nav></header>
+<div class="hero-content"><h1 id="headline">ストリートピアノの音が<br>まちの記憶になる</h1>
+<div class="daily"><p class="label">本日の利用者数</p><p class="number" aria-live="polite" aria-atomic="true"><span id="count">—</span><span class="unit">人</span></p><p id="status" class="status" role="status">読み込み中</p><button id="retry" class="retry" hidden>再読み込み</button></div>
+<a class="spot-button" href="#spots">スポットを見る</a></div>
+<a class="scroll" href="#spots" aria-label="スポットまでスクロール"><span>SCROLL</span><i aria-hidden="true"></i></a>
+</section>
+<section id="spots" class="spots" aria-labelledby="spots-title"><p class="eyebrow">FIND YOUR PIANO</p><h2 id="spots-title">まちで、音に出会う。</h2><p id="spots-empty">スポット情報は、ただいま準備中です。</p><ul id="spot-list" hidden></ul><a class="back" href="#home">トップへ戻る</a></section>
+</main>
+</body></html>

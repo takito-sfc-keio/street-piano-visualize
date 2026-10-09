@@ -1,0 +1,9 @@
+現在のページは assets/dusk-piano.png を表示します。
+背景5種類は assets/vibes/ に同梱しています。
+01-quiet：静けさ
+02-ease：やすらぎ
+03-warmth：ぬくもり
+04-lilt：弾み
+05-vibrancy：にぎわい
+背景の自動切り替え・ポエム生成は未実装です。
+起動方法とAPI設定はREADME.mdをご覧ください。
