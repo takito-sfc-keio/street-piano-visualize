@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#202631"><meta name="description" content="ストリートピアノの音が、まちの記憶になる。今日の演奏との出会いを。">
 <title>Street Piano Insights</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=piano2">
+<link rel="stylesheet" href="styles.css?v=piano3">
 <script src="config.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
@@ -13,12 +13,33 @@
 <section class="hero" id="home" aria-labelledby="headline">
 <div class="scene" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div>
 <header class="header"><a class="brand" href="#home">Street Piano <span>Insights</span></a><button class="menu-toggle" type="button" aria-label="メニューを開く" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
-<nav id="menu" aria-label="メインメニュー" hidden><a href="#home">ホーム</a><a href="#spots">スポットを見る</a></nav></header>
+<nav id="menu" aria-label="メインメニュー" hidden><a href="#home">ホーム</a><a href="#diary">ダイアリー</a><a href="#spots">スポット</a></nav></header>
 <div class="hero-content"><h1 id="headline">ストリートピアノの音が<br>まちの記憶になる</h1>
-<div class="daily"><p class="label">本日の利用者数</p><p class="number" aria-live="polite" aria-atomic="true"><span id="count">—</span><span class="unit">人</span></p><p id="status" class="status" role="status">読み込み中</p><button id="retry" class="retry" hidden>再読み込み</button></div>
-<a class="spot-button" href="#spots">スポットを見る</a></div>
-<a class="scroll" href="#spots" aria-label="スポットまでスクロール"><span>SCROLL</span><i aria-hidden="true"></i></a>
+<div class="daily"><p class="label">前日の利用者数</p><p class="number" aria-live="polite" aria-atomic="true"><span id="count">—</span><span class="unit">人</span></p><p id="date-label" class="date-label"></p><p id="status" class="status" role="status">読み込み中</p><button id="retry" class="retry" hidden>再読み込み</button></div>
+<a class="spot-button" href="#diary">まちのダイアリーを読む</a></div>
 </section>
+
+<section id="diary" class="diary-section" aria-labelledby="diary-title">
+<p class="eyebrow">TOWN DIARY</p>
+<h2 id="diary-title">まちのダイアリー</h2>
+<div class="diary-nav">
+<button id="diary-prev" class="diary-arrow" aria-label="前の日へ" disabled>&larr;</button>
+<p id="diary-date" class="diary-date"></p>
+<button id="diary-next" class="diary-arrow" aria-label="次の日へ" disabled>&rarr;</button>
+</div>
+<article id="diary-content" class="diary-content">
+<p id="diary-text" class="diary-text">読み込み中…</p>
+</article>
+<div id="diary-stats" class="diary-stats" hidden>
+<div class="stat-cards" id="stat-cards"></div>
+</div>
+<div class="diary-history">
+<button id="history-toggle" class="history-toggle">過去のダイアリーを見る</button>
+<ul id="history-list" class="history-list" hidden></ul>
+</div>
+<a class="section-link" href="#spots">スポット情報を見る</a>
+</section>
+
 <section id="spots" class="spots" aria-labelledby="spots-title"><p class="eyebrow">FIND YOUR PIANO</p><h2 id="spots-title">まちで、音に出会う。</h2><p id="spots-empty">スポット情報は、ただいま準備中です。</p><ul id="spot-list" hidden></ul><a class="back" href="#home">トップへ戻る</a></section>
 </main>
 </body></html>
